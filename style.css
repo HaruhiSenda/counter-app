@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+}
+output {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+}
+.button-area{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 24px;
+}
+.button-area button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFF;
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: none;
+    transition: filter 0.15s ease;
+}
+#increase{
+    background-color: orangered;
+}
+#reset{
+    background-color: #777;
+}
+#decrease{
+    background-color: mediumblue;
+}
+/*ホバー*/
+#increase:hover{
+    filter: brightness(0.85);
+}
+#reset:hover{
+    filter: brightness(0.85);
+}
+#decrease:hover{
+    filter: brightness(0.85);
+}
+@media (max-width: 470px){
+    .button-area{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+    .button-area button{
+        padding: 12px 64px;
+    }
+}
